@@ -1,0 +1,89 @@
+<svg viewBox="0 0 680 520" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <title>AI_WEEKLY_NEWS + Hermes 双线系统架构</title>
+  <desc>双线AI Agent系统架构图：左侧为AI_WEEKLY_NEWS视频编译管线，右侧为Hermes智能运维Agent体系</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#888780" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <style>
+    .t { font-family: sans-serif; font-size: 14px; fill: #2C2C2A; }
+    .ts { font-family: sans-serif; font-size: 12px; fill: #5F5E5A; }
+    .th { font-family: sans-serif; font-size: 14px; font-weight: 500; fill: #2C2C2A; }
+  </style>
+
+  <!-- 背景分区：左侧 - AI_WEEKLY_NEWS -->
+  <rect x="20" y="60" width="310" height="440" rx="16" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.5"/>
+  <text class="th" x="175" y="82" text-anchor="middle" fill="#3C3489">AI 资讯编译管线</text>
+
+  <!-- 背景分区：右侧 - Hermes -->
+  <rect x="350" y="60" width="310" height="440" rx="16" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+  <text class="th" x="505" y="82" text-anchor="middle" fill="#0C447C">智能运维 Agent 体系</text>
+
+  <!-- ========== 左侧模块 ========== -->
+  <g class="c-green">
+    <rect x="45" y="100" width="260" height="44" rx="8" fill="#C0DD97" stroke="#639922" stroke-width="0.5"/>
+    <text class="th" x="175" y="122" text-anchor="middle" dominant-baseline="central" fill="#27500A">采集 Agent：全网热点抓取</text>
+  </g>
+  <path d="M175 144 L175 160" stroke="#639922" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <g class="c-amber">
+    <rect x="45" y="165" width="260" height="44" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+    <text class="th" x="175" y="187" text-anchor="middle" dominant-baseline="central" fill="#633806">摘要 Agent：LLM 智能精简</text>
+  </g>
+  <path d="M175 209 L175 225" stroke="#BA7517" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <g class="c-coral">
+    <rect x="45" y="230" width="260" height="44" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+    <text class="th" x="175" y="252" text-anchor="middle" dominant-baseline="central" fill="#712B13">视觉 Agent：图表 &amp; 帧生成</text>
+  </g>
+  <path d="M175 274 L175 290" stroke="#D85A30" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <g class="c-teal">
+    <rect x="45" y="295" width="260" height="44" rx="8" fill="#9FE1CB" stroke="#1D9E75" stroke-width="0.5"/>
+    <text class="th" x="175" y="317" text-anchor="middle" dominant-baseline="central" fill="#085041">编译 Agent：FFmpeg 合成 1080p</text>
+  </g>
+
+  <rect x="45" y="360" width="260" height="70" rx="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+  <text class="ts" x="175" y="380" text-anchor="middle" fill="#444441">技术栈</text>
+  <text class="ts" x="175" y="396" text-anchor="middle" fill="#5F5E5A">Python · Pillow · numpy · imageio</text>
+  <text class="ts" x="175" y="412" text-anchor="middle" fill="#5F5E5A">FFmpeg · PNG 帧序列 · 1080p MP4</text>
+
+  <rect x="45" y="448" width="260" height="36" rx="8" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.5"/>
+  <text class="ts" x="175" y="472" text-anchor="middle" dominant-baseline="central" fill="#791F1F">~200 万 Token/日 | 每周 3-5 条视频</text>
+
+  <!-- ========== 右侧模块 ========== -->
+  <g class="c-green">
+    <rect x="375" y="100" width="260" height="44" rx="8" fill="#C0DD97" stroke="#639922" stroke-width="0.5"/>
+    <text class="th" x="505" y="122" text-anchor="middle" dominant-baseline="central" fill="#27500A">日志 Agent：7×24 实时采集</text>
+  </g>
+  <path d="M505 144 L505 160" stroke="#639922" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <g class="c-amber">
+    <rect x="375" y="165" width="260" height="44" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+    <text class="th" x="505" y="187" text-anchor="middle" dominant-baseline="central" fill="#633806">异常 Agent：模式识别 &amp; 预警</text>
+  </g>
+  <path d="M505 209 L505 225" stroke="#BA7517" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <g class="c-coral">
+    <rect x="375" y="230" width="260" height="44" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+    <text class="th" x="505" y="252" text-anchor="middle" dominant-baseline="central" fill="#712B13">诊断 Agent：根因分析 &amp; 修复建议</text>
+  </g>
+  <path d="M505 274 L505 290" stroke="#D85A30" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <g class="c-teal">
+    <rect x="375" y="295" width="260" height="44" rx="8" fill="#9FE1CB" stroke="#1D9E75" stroke-width="0.5"/>
+    <text class="th" x="505" y="317" text-anchor="middle" dominant-baseline="central" fill="#085041">执行 Agent：一键修复 &amp; 通知</text>
+  </g>
+
+  <rect x="375" y="360" width="260" height="70" rx="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+  <text class="ts" x="505" y="380" text-anchor="middle" fill="#444441">部署环境</text>
+  <text class="ts" x="505" y="396" text-anchor="middle" fill="#5F5E5A">腾讯云 43.155.153.81</text>
+  <text class="ts" x="505" y="412" text-anchor="middle" fill="#5F5E5A">Debian · Hermes · Sub2API · Squid(8888)</text>
+
+  <rect x="375" y="448" width="260" height="36" rx="8" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.5"/>
+  <text class="ts" x="505" y="472" text-anchor="middle" dominant-baseline="central" fill="#791F1F">~150 万 Token/日 | 故障定位 45→8 分钟</text>
+
+  <text class="th" x="340" y="30" text-anchor="middle" fill="#2C2C2A">AI 双线 Agent 系统架构</text>
+  <text class="ts" x="340" y="48" text-anchor="middle" fill="#5F5E5A">内容生产管线 + 智能运维体系</text>
+</svg>
